@@ -1,0 +1,23 @@
+# System monitor (better top)
+alias b="btop"
+
+# Extract archives (custom/OMZ extract function)
+alias e="extract"
+
+# Simplified man pages
+alias t="tldr"
+
+# Terminal UI for Git
+alias g="lazygit"
+
+# Terminal UI for Docker
+alias d="lazydocker"
+
+# Search history with fzf, strip command number, copy to clipboard (macOS pbcopy)
+alias h="history | fzf | awk '{\$1=\"\"; print substr(\$0,2)}' | pbcopy"
+
+# Run quick Git commit & push script
+alias c="./quick-commit.sh"
+
+# Open current directory in Vim
+alias v="vim ."

@@ -1,0 +1,5 @@
+" Scroll one page down with Shift+J
+map J scrollPageDown
+
+" Scroll one page up with Shift+K
+map K scrollPageUp
