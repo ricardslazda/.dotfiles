@@ -42,9 +42,6 @@ zinit light zsh-users/zsh-syntax-highlighting
 # Extra completions
 zinit light zsh-users/zsh-completions
 
-# Autosuggestions
-zinit light zsh-users/zsh-autosuggestions
-
 # fzf-powered tab completion
 zinit light Aloxaf/fzf-tab
 
@@ -145,3 +142,5 @@ eval "$(fzf --zsh)"
 
 # Initialize zoxide (smarter cd)
 eval "$(zoxide init --cmd cd zsh)"
+
+export PATH="$PATH:$HOME/.composer/vendor/bin"
