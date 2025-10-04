@@ -14,10 +14,10 @@ alias g="lazygit"
 alias d="lazydocker"
 
 # Search history with fzf, strip command number, copy to clipboard (macOS pbcopy)
-alias h="history | fzf | awk '{\$1=\"\"; print substr(\$0,2)}' | pbcopy"
+alias h="fc -ln 1 | fzf | awk '{\$1=\"\"; print substr(\$0,2)}' | pbcopy"
 
 # Run quick Git commit & push script
-alias c="./quick-commit.sh"
+alias c="$HOME/quick-commit.sh"
 
 # Open current directory in Vim
 alias v="vim ."
