@@ -1,0 +1,126 @@
+" ===========================
+" Base Configuration
+" ===========================
+ 
+" Reuse ~/.vimrc settings
+source ~/.vimrc
+ 
+" Highlight yanked text
+set highlightedyank
+ 
+" Enable EasyMotion
+set easymotion
+ 
+" Enable vim-surround
+set surround
+ 
+" Enable NERDTree emulation
+set NERDTree
+ 
+" Text objects for functions
+set functiontextobj
+ 
+" Text objects for arguments
+set argtextobj
+ 
+" Extended % matching
+set matchit
+ 
+" ===========================
+" Navigation
+" ===========================
+ 
+" EasyMotion search
+map <leader><leader> <Plug>(easymotion-s)
+ 
+" Go back in navigation
+map <S-h> <Action>(Back)
+ 
+" Go forward in navigation
+map <S-l> <Action>(Forward)
+ 
+" Previous tab
+map <C-S-TAB> <Action>(PreviousTab)
+ 
+" Next tab
+map <C-TAB> <Action>(NextTab)
+ 
+" Jump to next method
+map <C-S-j> <Action>(MethodDown)
+ 
+" Jump to previous method
+map <C-S-k> <Action>(MethodUp)
+ 
+" ===========================
+" Window / Layout Management
+" ===========================
+ 
+" Hide all tool windows
+map <leader>q <Action>(HideAllWindows)
+ 
+" Focus Project View
+map <leader>f <Action>(SelectInProjectView)
+ 
+" Restore default layout
+map <leader>l <Action>(RestoreDefaultLayout)
+ 
+" Split editor vertically
+map <leader>sv <Action>(SplitVertically)
+ 
+" Split editor horizontally
+map <leader>sh <Action>(SplitHorizontally)
+ 
+" ===========================
+" Debugging
+" ===========================
+ 
+" Show all breakpoints
+map <leader>dv <Action>(ViewBreakpoints)
+ 
+" Toggle line breakpoint
+map <leader>dt <Action>(ToggleLineBreakpoint)
+ 
+" Start PHP debug listening
+map <F6> <Action>(PhpListenDebugAction)
+ 
+" Step into
+map <F7> <Action>(StepInto)
+ 
+" Step over
+map <F8> <Action>(StepOver)
+ 
+" Resume program
+map <F9> <Action>(Resume)
+ 
+" Step out
+map <F10> <Action>(StepOut)
+ 
+" ===========================
+" Bookmarks
+" ===========================
+ 
+" Show bookmarks
+map <leader>bv <Action>(ShowBookmarks)
+ 
+" Toggle bookmark with mnemonic
+map <leader>bt <Action>(ToggleBookmarkWithMnemonic)
+ 
+" ===========================
+" Git / VCS
+" ===========================
+ 
+" Git blame (annotate)
+map <leader>gb <Action>(Annotate)
+ 
+" ===========================
+" File Path Copying
+" ===========================
+ 
+" Copy filename
+map <leader>cf <Action>(CopyFileName)
+ 
+" Copy absolute path
+map <leader>ca <Action>(CopyAbsolutePath)
+ 
+" Copy project root-relative path
+map <leader>cr <Action>(CopyContentRootPath)
