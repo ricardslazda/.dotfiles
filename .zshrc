@@ -55,6 +55,9 @@ zinit snippet OMZP::extract
 # Enable completion system
 autoload -Uz compinit && compinit
  
+# Enable system clipboard integration for zsh-vi-mode
+ZVM_SYSTEM_CLIPBOARD_ENABLED=true
+
 # Enhanced vi mode plugin
 zinit light jeffreytse/zsh-vi-mode
  
@@ -139,6 +142,11 @@ alias d="lazydocker"
 
 # Open pet snippet picker and execute selected command
 alias p="pet exec"
+
+# Generate repository summary
+r() {
+  repomix "$@"
+}
  
 # Run quick Git commit & push script
 c() { "$HOME/quick-commit.sh" "$@"; }
