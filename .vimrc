@@ -166,3 +166,6 @@ vnoremap <leader>y "+y
  
 " Yank current line to system clipboard
 nnoremap <leader>yy "+yy
+
+" When pasting over a visual selection, don't yank the replaced text
+xnoremap p "_dP

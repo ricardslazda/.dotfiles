@@ -50,6 +50,9 @@ map <C-S-j> <Action>(MethodDown)
  
 " Jump to previous method
 map <C-S-k> <Action>(MethodUp)
+
+" Show popup with methods/structure of current file
+map <leader>sp <Action>(FileStructurePopup)
  
 " ===========================
 " Window / Layout Management
